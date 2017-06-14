@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jungwoanchae/portfolio.git"
+  },
+  "author": "채정완",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jungwoanchae/portfolio/issues"
+  },
+  "homepage": "https://github.com/jungwoanchae/portfolio#readme",
+  "devDependencies": {
+    "grunt-serve": "^0.1.6"
+  }
+}
