@@ -1,0 +1,9 @@
+/* line 1, assets\less\common.less */
+h1 {
+  border: 1px solid #F00;
+}
+/* line 2, assets\less\common.less */
+.a {
+  border: 1px #F00 solid;
+  background: #000;
+}
