@@ -1,0 +1,354 @@
+.sub3_main{
+    background-position: center;
+    background-image: url("../images/7.jpg");
+    background-size: cover;
+    height: 746px;
+    .top{
+        background-color: rgba(255, 255, 255, 0.5);
+        width: auto;
+        height: 100px;
+
+        .top_right_text{
+            float: right;
+            margin-right: 390px;
+            li{
+                display:inline-block;
+                line-height: 100px;
+                margin-right: 10px;
+                a{
+                    color: @baseColor-w;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.center{
+
+    .home_list{
+        float: left;
+        margin-left: 364px;
+        li{
+            display: inline-block;
+            line-height: 50px;
+            color: @baseColor-g;
+            font-size: 14px;
+            a{
+                color: @baseColor-g;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .center_right_search{
+        float: right;
+        line-height: 50px;
+        input{
+            width: 210px;
+            margin-right: 300px;
+            background-color: transparent;
+            padding: 5px 0 5px 30px;
+            background-image: url('../images/Layer1.png');
+            background-repeat: no-repeat;
+            background-size: 8%;
+            background-position: 6px 6px;
+            border:none;
+            font-size: 12px;
+            color: @baseColor-g;
+        }
+    }
+}
+
+section{
+    height: 1765px;
+
+    .top_list
+    {
+        float: left;
+        margin-left: 15px;
+        li{
+            font-size: 20px;
+            color: rgb(143, 139, 139);
+        }
+    }
+    .sns1{
+        float: left;
+        margin: -10px 0 0 210px;
+
+        li{
+            display: inline-block;
+            margin-left: 6px;
+            img{
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+    .top_line{
+        border: 1px @baseColor-gr solid;
+        width: 200px;
+        margin: 30px 0 0 5px;
+    }
+
+    .sub3_booking{
+        border: 1px @baseColor-gr solid;
+        width: 1189px;
+        height: 500px;
+        margin: 25px auto;
+    }
+
+
+    .right-box{
+        border-left: 2px @baseColor-gr  solid;
+        float: right;
+        width: 590px;
+        height: 300px;
+
+        .booking{
+            margin: -47px auto;
+            color:  @baseColor-r;
+            img{
+                width: 30px;
+                height: 30px;
+                margin: 47px 0 0 50px;
+            }
+            h2{
+                border-bottom: 2px @baseColor-line-g solid;
+                display: inline-block;
+                width: 150px;
+                margin-left: 10px;
+            }
+        }
+        ul{
+            margin: 80px 0 0 50px;
+            line-height: 2.5em;
+        }
+    }
+
+
+
+
+    h2{
+        margin : 48px 0 0 50px;
+        border-bottom: 2px @baseColor-line-g solid;
+        width: 45px;
+    }
+
+    .text_story{
+        ul{
+            margin: 45px 0 0 250px;
+            li{
+                display: inline-block;
+                margin-left: 50px;
+            }
+            input{
+                margin-left: 20px;
+            }
+        }
+        .text_story_line1{
+            margin: 10px 0 0 50px;
+            border: 1px @baseColor-line-g solid;
+            width: 270px;
+        }
+    }
+
+    .bottom{
+        width: 100%;
+        height: 70px;
+        margin-top: 80px;
+        clear: both;
+        text-align: center;
+        border: 1px #FFF solid;
+        .button1{
+            border: 1px #F00 solid;
+            background-color: #F00;
+            font-size: 14px;
+            font-weight: bold;
+            color: #FFF;
+            width: 100px;
+            height: 40px;
+        }
+        .button2{
+            border: 1px @baseColor-g solid;
+            font-size: 14px;
+            font-weight: bold;
+            color: @baseColor-g;
+            width: 100px;
+            height: 40px;
+        }
+    }
+}
+
+
+// ----------------------------예약(달력) 시작------------------------
+
+.jquery-calendar{
+    margin: -210px 0 0 50px;
+}
+
+.cal {
+    background-color: white;
+    display: block;
+    width: 216px;
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.cal a {
+    text-decoration: none;
+}
+
+.cal tr, .cal th, .cal td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.cal caption {
+    line-height: 32px;
+    font-weight: bold;
+    color: #e2e2e2;
+    text-align: center;
+    text-shadow: 0 -1px black;
+    background: #333;
+    //background: rgba(0, 0, 0, 0.35);
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #313131;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+}
+.cal caption a {
+    display: block;
+    line-height: 32px;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #e2e2e2;
+}
+.cal caption a:hover {
+    color: white;
+}
+.cal caption .prev {
+    float: left;
+}
+.cal caption .next {
+    float: right;
+}
+.cal th, .cal td {
+    width: 30px;
+    text-align: center;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+    font-family:'malgun gothic';
+}
+.cal th:first-child, .cal td:first-child {
+    border-left: 0;
+}
+.cal th {
+    line-height: 20px;
+    font-size: 11px;
+    color: #696969;
+    text-transform: uppercase;
+    background: #f3f3f3;
+    border-left: 1px solid #f3f3f3;
+}
+.cal td {
+    font-size: 11px;
+    font-weight: bold;
+    border-top: 1px solid #c2c2c2;
+    border-left: 1px solid #c2c2c2;
+}
+.cal td a {
+    clear: both;
+    display: block;
+    position: relative;
+    width: 30px;
+    line-height: 28px;
+    color: #666;
+    background-image: -webkit-linear-gradient(top, #eaeaea, #e5e5e5 60%, #d9d9d9);
+    background-image: -moz-linear-gradient(top, #eaeaea, #e5e5e5 60%, #d9d9d9);
+    background-image: -o-linear-gradient(top, #eaeaea, #e5e5e5 60%, #d9d9d9);
+    background-image: linear-gradient(to bottom, #eaeaea, #e5e5e5 60%, #d9d9d9);
+    -webkit-box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+}
+.cal td a:hover, .cal td.off a {
+    background: #f3f3f3;
+}
+.cal td.off a {
+    color: #b3b3b3;
+}
+.cal td.active a, .cal td a:active {
+    margin: -1px;
+    color: #f3f3f3;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    background: #6dafbf;
+    border: 1px solid #598b94;
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.cal td.active:first-child a, .cal td:first-child a:active {
+    border-left: 0;
+    margin-left: 0;
+}
+.cal td.active:last-child a, .cal td:last-child a:active {
+    border-right: 0;
+    margin-right: 0;
+}
+.cal tr:last-child td.active a, .cal tr:last-child td a:active {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+// ----------------------------예약(달력) 끝------------------------
+
+
+
+
+footer{
+    margin: 0 auto;
+    width: 100%;
+    outline:1px @footer-line-g solid;
+    color: @baseColor-g;
+    background-color: @baseColor-gr;
+}
+.footer_box{
+    border: 1px @baseColor-gr solid;
+    outline:2px @baseColor-gr solid;
+    margin:0 auto;
+    height: 271px;
+    max-width:1200px;
+    h1{
+        padding-left: 100px;
+        margin: 40px 0 0 100px;
+        letter-spacing: 0.15em;
+    }
+    .footer_service_3{
+        margin: -25px 0 0 495px;
+        height: 100px;
+        li{
+            display:inline-block;
+            margin-left: 15px;
+            font-size: 14px;
+            color: @baseColor-g;
+            a{
+                color: @baseColor-g;
+                font-size: 14px;
+            }
+        }
+    }
+    .footer_introduce{
+        margin: -50px 0 0 300px;
+        li{
+            display:inline-block;
+            line-height: 25px;
+            padding-left: 15px;
+            font-size: 12px;
+            color: @baseColor-g;
+        }
+    }
+}
